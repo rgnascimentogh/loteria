@@ -134,7 +134,7 @@ def swith(case):
 def faz_jogo():#preenche o dicionário com os jogos e as quantidades
     contador = 1#incrementa valores inteiros ao dicionário tab
     total = 0#calcula a soma dos valores dos jogos escolhidos
-    valor = {'Lotofacil':3,'Lotomania':3,'Mega Sena':5,'Dupla Sena':2.5,'Dia de Sorte':2.5,'Quina':2.5}
+    valor = {'Lotofacil':3.5,'Lotomania':3,'Mega Sena':6,'Dupla Sena':3,'Dia de Sorte':2.5,'Quina':3}
     for key in valor:#adiciona valores tipo string ao dicionário jogos usando as chaves do dicionário valor
         jogos[key] = input('\nDigite o nº de jogos:'+key+'\t')
         if jogos[key] != '0':
