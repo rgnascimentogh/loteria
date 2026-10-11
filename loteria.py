@@ -140,15 +140,22 @@ def swith(case):
                 print(quina())
                 x = x + 1
             return '-------------------------------------------------------'
-            
+           
+
         case 7:
+            x = 0
+            while x < int(jogos['Timemania']):
+                print(timemania())
+                x = x + 1
+            return '-------------------------------------------------------'   
+        case 8:
             return 0
 
 
 def faz_jogo():#preenche o dicionário com os jogos e as quantidades
     contador = 1#incrementa valores inteiros ao dicionário tab
     total = 0#calcula a soma dos valores dos jogos escolhidos
-    valor = {'Lotofacil':3.5,'Lotomania':3,'Mega Sena':6,'Dupla Sena':3,'Dia de Sorte':2.5,'Quina':3}
+    valor = {'Lotofacil':3.5,'Lotomania':3,'Mega Sena':6,'Dupla Sena':3,'Dia de Sorte':2.5,'Quina':3,'Timemania':3.5}#dicionário com os valores dos jogos
     for key in valor:#adiciona valores tipo string ao dicionário jogos usando as chaves do dicionário valor
         jogos[key] = input('\nDigite o nº de jogos:'+key+'\t')
         if jogos[key] != '0':
