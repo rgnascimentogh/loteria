@@ -1,5 +1,19 @@
 import random
 import datetime
+
+def timemania():
+    num = []
+    cont = 0
+    sai = 0
+    while cont < 80:
+        cont = cont + 1
+        num.append(cont)
+    while sai < 70:
+        sai = sai + 1
+        num.remove(random.choice(num))
+    jog.write('\nTimemania\n'+str(num)+'\n')
+    return num  
+
 def lotofacil():
     num = []
     cont = 0
